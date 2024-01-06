@@ -36,7 +36,7 @@ ADMINS = int(environ.get("ADMINS", "1242556540"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
-CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
+CDB_NAME = environ.get("CDB_NAME", "cloneVJbotz")
 DB_URI = environ.get("DB_URI", "")
 DB_NAME = environ.get("DB_NAME", "vjbotz")
 
@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6380339169:AAH5vkzcx8Y2ZaRhJURV4eEcah332uAjO0c")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "FilesStore_DpBot") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 
@@ -79,7 +79,7 @@ class Var(object):
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001789244683'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
